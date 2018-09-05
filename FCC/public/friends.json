@@ -1,0 +1,25 @@
+[
+{ "name":"Ambuja",
+  "path":"images/ambuja.jpg"
+},
+{ "name":"Vaibhav",
+  "path":"images/vaibhav.jpg"
+},
+{ "name":"Ajay",
+  "path":"images/ajay.jpg"
+},
+{ "name":"Pooja",
+  "path":"images/pooja.jpg"
+},
+{ "name":"Sindy",
+  "path":"images/sindy.jpg"
+},
+{ "name":"Auxy",
+  "path":"images/akshay.jpg"
+},
+{ "name":"Shivani",
+  "path":"images/shivani.jpg"
+},
+{ "name":"Akash",
+  "path":"images/akash.jpg"
+}]

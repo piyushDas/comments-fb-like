@@ -1,0 +1,288 @@
+.App {
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+input:focus, textarea:focus, button:focus{
+  outline: none;
+}
+
+@keyframes load-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.left-side-panel{
+  width: 260px;
+  float: left;
+  /* height: 300px; */
+  /* text-align: center; */
+  padding: 20px;
+  /* margin-top: 80px; */
+  background: #fff;
+  height: calc(100vh - 60px);
+  box-shadow: 0 5px 10px #d4d4d4;
+}
+
+header{
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0 5px 10px #d4d4d4;
+  background: #fff;
+  padding: 0px 15px;
+  border-bottom: 2px solid #73bfff;
+}
+
+header span{
+  margin-left: 20px;
+  color: #398bff;
+  /* color: black; */
+  font-size: 20px;
+}
+
+header img{
+  height: 70%;
+}
+.post{
+  float: left;
+  margin: 10px;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 7px #d4d4d4;
+  box-shadow: 0 2px 7px #d4d4d4;
+  width: calc(100vw - 300px);
+}
+
+.comment .post{
+  margin: 0;
+  border-left: 5px solid #398bff;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  float: left;
+  width: calc(100% - 10px);
+}
+
+.post-header{
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.post-header img{
+  width: 45px;
+  float: left;
+  margin: 0 10px;
+  box-shadow: 0 0 6px #494646a3;
+}
+
+.post-header-title{
+  width: calc(100% - 65px);
+  float: left;
+}
+
+.post-header-title div:first-of-type{
+  font-size: 12px;
+  font-weight: bold;
+  color: #075acf;
+}
+
+.comment .post-header-title div:first-of-type{
+  font-size: 12px;
+  font-weight: normal;
+  min-height: 30px;
+  color:#333;
+}
+
+.post-header-title div:last-of-type{
+  color:#bbb;
+  font-size: 10px;
+}
+
+.controls{
+  padding: 5px 12px;
+}
+
+.controls span{
+  color:blue;
+  font-size: 11px;
+}
+
+.post-content div:first-of-type{
+  padding: 0 15px;
+}
+
+.post-content{
+  padding: 15px 0;
+}
+
+.comment{
+  width: 100%;
+  float: left;
+}
+
+.back-overlay{
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  background: #333;
+  top: 0;
+  opacity: 0.3;
+}
+
+.modal-overlay{
+  width: 300px;
+  position: fixed;
+  background: #fff;
+  left: calc(50vw - 150px);
+  top: calc(50vh - 200px);
+  padding: 20px;
+  text-align: center;
+}
+
+.right-side-panel{
+  width: calc(100vw - 300px);
+  float: left;
+}
+
+.new-post{
+  background: #fff;
+  margin: 10px;
+  width: 100%;
+  box-shadow: 0 2px 7px #d4d4d4;
+  padding: 10px 20px;
+}
+
+.new-post h4{
+  font-size: 18px;
+    color: #4198e2;
+    margin: 3px 0 15px;
+}
+
+.input-div{
+  margin-bottom: 20px;
+}
+
+.input-div input{
+  background: none;
+  border: none;
+  border-bottom: 2px solid #eee;
+  padding-left: 5px;
+  width: 100%;
+}
+
+.input-div button{
+  border: none;
+  background: #eee;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.profile-pic{
+  height: 200px;
+  text-align: center;
+}
+
+.profile-pic img{
+  height: 100%;
+  box-shadow: 0 0 10px #494646;
+}
+
+.profile-header{
+  text-align: left;
+  margin: 7px 0;
+  color: #398bff;
+  font-weight: bold;
+  padding-left:10px;
+}
+#friend-list {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+.friend-list-item {
+  width: 32%;
+  float: left;
+  margin-left: 1%;
+  font-size: 11px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+.friend-list-item:hover{
+  box-shadow:  0 0 10px #7d7d7d;
+  color: #333;
+}
+
+.friend-pic{
+  height: 70px;
+  width: 100%;
+  float: left;
+}
+
+.friend-pic img{
+  height: 100%;
+  box-shadow: 0 0 3px #494646a3;
+}
+
+textarea{
+  background: none;
+  resize: none;
+  width: 90%;
+  border: 1px solid deepskyblue;
+  border-radius: 6px;
+  box-shadow: 0 0 3px #b2b2c747;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #bbb;
+}
+
+.new-post button{
+  border: none;
+  padding: 4px 30px;
+  background: #4198e2;
+  color: #fff;
+  margin-top: 3px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.new-post button:hover{
+  background: #289cff
+}
+
+.commented_by{
+  font-weight: bold;
+  font-size: 13px;
+  color: #075acf;
+}
+
+.reply{
+  display: flex;
+  border-left: 5px solid #398bff;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  float: left;
+  width: calc(100% - 10px);
+  background: #fff;
+  box-shadow: 0 0 5px #ccc;
+  padding: 10px;
+}
+
+.reply textarea{
+  height: 30px;
+  margin-right: 10px;
+}
+
+.reply button{
+  border: none;
+  padding: 4px 20px;
+  background: #4198e2;
+  color: #fff;
+  margin-top: 3px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.reply button:hover{
+  background: #289cff
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "id":1,
+    "name":"Piyush",
+    "image_path":"images/piyush.jpg",
+    "timestamp": "Fri Jun 01 2018",
+    "post":"Bengaluru, This Saturday gear up for the biggest club Hip-Hop night in the city with International DJ Maga! A super popular Dj from Russia, Maga ensures you groove to the finest of beats and awesome mixes throughout the night! So put on your dancing shoes, get your gang together and head out to an amazing 5-star nightclub!",
+    "comments":[
+      {
+        "id":"comment_1_1",
+        "name":"Shivani",
+        "timestamp": "Mon Jun 04 2018",
+        "image_path":"images/shivani.jpg",
+        "post":"A super popular Dj from Russia, Maga ensures you groove to the finest of beats and awesome mixes throughout the night!",
+        "comments":[]
+      },
+      {
+        "id":"comment_1_2",
+        "name":"Vaibhav",
+        "timestamp": "Tue Jun 05 2018",
+        "image_path":"images/vaibhav.jpg",
+        "post":"Passes available in early bird discounts, click here: https://iape.in/2JoF3xv",
+        "comments":[]
+      }
+    ]
+  }
+]
